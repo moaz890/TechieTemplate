@@ -1,0 +1,29 @@
+@use "../custom" as *;
+
+
+.statistics {
+
+    position: relative;
+    padding: 3.375rem 0;
+    &--overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        max-height: 100%;
+
+        img {
+            max-height: 100%;
+            max-width: 100%;
+            width: 100%;
+            height: 100%;
+        }
+
+    }
+
+    p {
+        color: $gray-400;
+    }
+
+}

@@ -1,0 +1,86 @@
+@use "../custom" as *;
+
+
+.portfolio {
+    position: relative;
+    padding: 5rem 0;
+
+    &--filter-buttons{
+
+        button {
+            border-radius: 4px !important;
+            background-color: $white;
+            color: $primary;
+            
+            &.active{
+                
+                background-color: $primary;
+                color: $white;
+            }
+        }
+    }
+    &--content{
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 40px;
+
+        &--column {
+            position: relative;
+            padding: 1rem;
+        }
+    }
+
+    &--image{
+
+        position: relative;
+        margin-bottom: 40px;
+        border-radius:  8px;
+        overflow: hidden;
+
+        &--overlay {
+            position: absolute;
+            background-color: $light-blue;
+            color: $gray-300;
+            left: 0;
+            right: 0;
+            top:0;
+            bottom: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+
+            &:hover {
+                
+                opacity: 1;
+    
+            }
+            &--info {
+                h3{
+                    font-weight: 400;
+                }
+            }
+        }
+        
+        &--icons {
+            color: $gray-300;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 1rem;
+
+            a{
+                color: inherit;
+                i{
+                    font-size: 1.25rem;
+                }
+
+                &:hover {
+                    i{
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+
+}

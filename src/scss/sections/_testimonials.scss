@@ -1,0 +1,61 @@
+@use "../custom" as *;
+
+
+.testimonial {
+    padding: 5rem 0;
+    position: relative;
+    background-color: $gray-200;
+    
+    &--pagination{
+        bottom: -1rem !important;
+    }
+}
+.slide {
+
+    position: relative;
+
+
+    &--info {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        align-items: start;
+        background-color: $white;
+        padding: 1rem 1rem 4rem;
+        border-radius: 0.5rem;
+        color: $gray-700;
+        font-size: 1.1rem;
+        font-style: italic;
+        i {
+            color: $light-blue;
+            font-size: 1.25rem;
+            margin-right: 5px;
+            margin-left: 5px;            
+        }
+    }
+
+    &--image {
+        position: relative;
+        padding-top: 4rem;
+
+        img {
+            width: 6rem;
+            height: 6rem;
+            border: 3px solid $white;
+            position: absolute;
+            top: -3rem;
+            border-radius: 50%;
+            left: 0.75rem;
+        }
+        
+        h3 {
+            font-size: 1.25rem;
+            font-weight: bold;
+            padding-left: 0.75rem;
+        }
+        p{
+            color: $gray-600;
+            padding-left: 0.75rem;
+        }
+    }
+}
+

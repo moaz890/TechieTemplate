@@ -1,0 +1,129 @@
+@use "../custom" as *;
+
+
+.services {
+    padding: 4rem 0;
+    background-color: $gray-300;
+
+    &__row {
+        margin-top: 2rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+        gap: 1rem;
+    }
+    &__box {
+        background-color: $white;
+        margin-left: auto;
+        padding: 3rem 1.775rem;
+        border-radius: 8px;
+        transition: 0.7s;
+
+        
+        &--icon {
+            position: relative;
+            
+
+            svg {
+                fill: #f5f5f5;
+                transition: 0.5s;
+            }
+            i {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 1.5rem;
+                transition: 0.5s;
+            }
+            
+        }
+        
+        &--info {
+            h3 {
+                font-size: 1.575rem;
+            }
+        }
+        &:nth-child(1){
+            
+            i {
+                color: #47aeff;
+            }
+        }
+        &:nth-child(2){
+            i {
+                color: #ffa76e;
+            }
+        }
+        &:nth-child(3){
+            i {
+                color: #e80368;
+            }
+        }
+        &:nth-child(4){
+            i {
+                color: #ffbb2c;
+            }
+        }
+        &:nth-child(5){
+            i {
+                color: #ff5828;
+            }
+        }
+        &:nth-child(6){
+            i {
+                color: #11dbcf;
+            }
+        }
+        
+        &:hover {
+            box-shadow: 16px 16px 40px rgba(0, 0, 0, 0.1);
+            
+            i {
+                color: $white;
+            }
+            &:nth-child(1){
+
+                svg {
+                    fill: #47aeff;
+                }
+            }
+            &:nth-child(2){
+
+                svg {
+                    fill: #ffa76e;
+                }
+            }
+            &:nth-child(3){
+
+                svg {
+                    fill: #e80368;
+                }
+            }
+            &:nth-child(4){
+
+                svg {
+                    fill: #ffbb2c;
+                }
+            }
+            &:nth-child(5){
+
+                svg {
+                    fill: #ff5828;
+                }
+            }
+            &:nth-child(6){
+
+                svg {
+                    fill: #11dbcf;
+                }
+            }
+            
+            
+
+        }
+
+
+
+
+    }
+}

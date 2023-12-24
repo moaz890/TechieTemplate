@@ -1,0 +1,26 @@
+
+
+@use "./custom";
+
+
+@use "./components/mixins";
+@use "./components/burrons";
+@use "./components/typography";
+@use "./components/animation";
+
+
+@use "./sections/navbar";
+@use "./sections/landing";
+@use "./sections/about";
+@use "./sections/statistics";
+@use "./sections/services";
+@use "./sections/features";
+@use "./sections/faq";
+@use "./sections/testimonials";
+@use "./sections/portfolio";
+@use "./sections/pricing";
+@use "./sections/contact";
+@use "./sections/footer";
+
+
+

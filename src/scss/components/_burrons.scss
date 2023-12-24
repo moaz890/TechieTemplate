@@ -1,0 +1,25 @@
+@use "../custom" as *;
+@use "./mixins" as *;
+
+.light-button{
+
+    background-color: transparent;
+    color: $white;
+
+    &:hover {
+        color: $hover;
+        background-color: $white;
+    }
+}
+
+.gradient-bg {
+
+    @include gradient;
+    padding: 0.475rem 2.475rem 0.475rem 1.475rem;
+    color: $white !important;
+    transition: 0.7s ease-in-out;
+    &:hover {
+        @include gradient-180;
+    }
+
+}

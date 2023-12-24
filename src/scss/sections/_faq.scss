@@ -1,0 +1,37 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+.faq{
+
+    padding: 5rem 0;
+    @include faqGradient;
+
+    &--header-line {
+        background-color: $gray-400;
+    }
+    &--header {
+        color: $gray-100;
+        
+        h1 {
+            color: inherit;
+        }
+        p {
+            margin-bottom: 2rem;
+        }
+
+    }
+    &--button {
+        color: $primary;
+        display: flex;
+        align-items: center;
+        i {
+            font-size: 13px;
+            width: 20px;
+            height: 20px;
+            border: 2px solid $primary;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 20px;
+            margin-right: 1rem;
+        }
+    }
+}

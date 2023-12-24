@@ -1,0 +1,26 @@
+
+@use "../custom" as *;
+
+
+.display-2 {
+    font-weight: 600;
+    font-size: 3.125rem;
+    line-height: 1.125;
+}
+
+.display-3 {
+    font-size: 2.225rem;
+    font-weight: 600;
+    line-height: 1.225;
+    color: $very-dark-blue;
+}
+
+.header-line {
+
+    width: 50px;
+    background-color: $blue;
+    height: 3px;
+    text-align: center;
+    margin: 0 auto 1rem;
+
+}

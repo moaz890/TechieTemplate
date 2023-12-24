@@ -1,0 +1,34 @@
+$blue:                                      #5846FA;
+$light-blue:                                rgba(24, 6, 185, 0.8);
+$dark-blue:                                 #7b27d8;
+$very-dark-blue:                            #2c4964;
+// scss-docs-start gray-color-variables
+$white:                                     #fff ;
+$gray-100:                                  #f8f9fa ;
+$gray-200:                                  #e9ecef ;
+$gray-300:                                  #dee2e6 ;
+$gray-400:                                  #ced4da ;
+$gray-500:                                  #adb5bd ;
+$gray-600:                                  #6c757d ;
+$gray-700:                                  #495057 ;
+$gray-800:                                  #343a40 ;
+$gray-900:                                  #212529 ;
+$black:                                     #000 ;
+
+
+
+$primary :                                  $blue;
+$secondary:                                 $light-blue;
+$hover:                                     $dark-blue;
+$btn-link-hover-color:                      $hover;
+
+
+
+
+$accordion-icon-active-color:               $primary;
+$accordion-padding-y:                       2rem;
+$accordion-padding-x:                       1.25rem;
+$accordion-button-active-color:             $secondary;
+
+
+@import "../vendors/bootstrap/scss/bootstrap.scss";

@@ -1,0 +1,41 @@
+@use "../custom" as *;
+
+.features {
+    position: relative;
+    padding: 5rem 0;
+
+    &--header {
+
+        p{
+            font-size: 1rem;
+            font-weight: 600;
+            color: $gray-700;
+        }
+    }
+
+}
+.feature {
+    position: relative;
+    padding: 1rem 0;
+
+    &--icon {
+        text-align: center;
+
+        i{
+            font-size: 2.5rem;
+            color: $blue;
+        }
+    }
+
+    &--info {
+        // padding-left: 1rem;
+        
+        h4 {
+            font-size: 1.25rem;
+        }
+        p{
+            font-size: 1rem;
+            color: $gray-600;
+        }
+    }
+}
